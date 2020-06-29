@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>404</title>
+        <link rel="icon" href="/img/weather.png">
+
+        <!-- Using ./ you use the path from your computer -->
+        <link rel="stylesheet" href="/css/styles.css">
+
+    </head>
+
+    <body>
+
+        <div class="main-content">
+            <!-- this is the headers html -->
+            {{>header}}
+
+            <!-- accessing data from hbs app.js -->
+            <p>{{errorMsg}}</p>
+        </div>
+    
+
+        {{>footer}}
+
+    </body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/weather.png">
+        <!-- Using ./ you use the path from your computer -->
+        <link rel="stylesheet" href="/css/styles.css">
+
+    </head>
+
+    <body>
+        <div class="main-content">
+             <!-- this is the headers html -->
+            {{>header}}
+
+            <p>Use this site to get your weather!</p>
+
+            <form>
+                <input type="text" placeholder="eg. Boston MA">
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="firstMessage"></p>
+            <p id="secondMessage"></p>
+        </div>
+
+        <!-- accessing data from hbs app.js -->
+        {{>footer}}
+
+        <!-- the only page that needs this api code -->
+        <script src="./js/app.js"></script>
+
+    </body>
+
+</html>

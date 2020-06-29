@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>Help</title>
+        <link rel="icon" href="/img/weather.png">
+
+        <!-- Using ./ you use the path from your computer -->
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <script src="./js/app.js"></script>
+
+    </head>
+
+    <body>
+        <div class="main-content">
+            <!-- this is the headers html -->
+            {{>header}}
+
+            <!-- accessing data from hbs app.js -->
+            <p>{{msg}}</p>
+        </div>
+
+
+        {{>footer}}
+
+    </body>
+
+</html>
